@@ -1,0 +1,1 @@
+Only the Django backend calls this service. Never log or store uploaded images outside the agreed folder.

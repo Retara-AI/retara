@@ -1,0 +1,3 @@
+- [ ] Tests pass locally
+- [ ] Worklog file added in docs/ai/worklog/
+- [ ] No secrets, datasets or model files committed

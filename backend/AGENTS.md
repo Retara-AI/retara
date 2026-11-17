@@ -1,0 +1,1 @@
+Django apps live here. Use accounts.models.Role for roles. API routes are under /api/. Emails print to the terminal in development. Run python manage.py test before finishing.

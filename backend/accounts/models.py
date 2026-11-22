@@ -14,6 +14,7 @@ class User(AbstractUser):
     email = models.EmailField("email address", unique=True)
     role = models.CharField(max_length=20, choices=Role.choices, default=Role.PATIENT)
     must_change_password = models.BooleanField(default=False)
+
     REQUIRED_FIELDS = ["email"]
 
     # --- FIX FOR THE CLASH ---
@@ -33,3 +34,6 @@ class User(AbstractUser):
         related_name="retara_user_permissions",  # Unique name
         related_query_name="user",
     )
+
+    def __str__(self):
+        return self.username
